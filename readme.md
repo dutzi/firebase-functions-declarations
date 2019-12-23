@@ -2,7 +2,27 @@
 
 This simple tool creates declaration files (.d.ts) for your Firebase Functions.
 
-**Important:** The declarations only include the function's _return value_. Not the data passed to it.
+When calling a firebase function you have no guarantee for the functions return value. This tool tries solving that.
+
+When using this tool, instead of writing:
+
+```js
+const x = (await firebase.functions().httpsCallable('myFunction')(someData)).data
+```
+
+And not know what x is, you write
+
+```js
+import { myFunction } from './firebase-functions';
+
+// ...
+
+const x = await myFunction(someData);
+```
+
+And x will be typed to be whatever `myFunction` returns!
+
+**Important:** Read the prerequisites and note that the declarations only include the function's _return value_. Not the data passed to it.
 
 ## Why?
 
