@@ -1,0 +1,24 @@
+{
+  "name": "firebase-functions-declarations",
+  "version": "1.0.3",
+  "description": "Creates declaration files for your firebase funcations",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "createFunctionsDeclarations": "./index.js"
+  },
+  "author": "dutzi",
+  "license": "ISC",
+  "dependencies": {
+    "@types/rimraf": "^2.0.3",
+    "@types/yargs": "^13.0.3",
+    "rimraf": "^3.0.0",
+    "runscript": "^1.4.0",
+    "yargs": "^15.0.2"
+  },
+  "peerDependencies": {
+    "typescript": "^3.7.4"
+  }
+}
