@@ -10,7 +10,7 @@ When using this tool, instead of writing:
 const x = (await firebase.functions().httpsCallable('myFunction')(someData)).data
 ```
 
-And not know what x is, you write:
+And not knowing what x is, you write:
 
 ```js
 import { myFunction } from './firebase-functions';
