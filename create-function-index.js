@@ -22,7 +22,7 @@ module.exports = inputPath => {
           const functionName = camelCase(filename);
 
           return `
-export async function ${functionName}(data: any) {
+export async function ${functionName}(data?: any) {
   return (await firebase.functions().httpsCallable('${functionName}')(data)).data as ReturnType<typeof ${functionName}Impl>;
 }`.trim();
         })
