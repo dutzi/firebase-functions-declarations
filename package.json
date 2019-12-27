@@ -1,6 +1,6 @@
 {
   "name": "firebase-functions-declarations",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Creates declaration files for your firebase funcations",
   "main": "index.js",
   "scripts": {
