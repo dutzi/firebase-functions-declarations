@@ -22,7 +22,7 @@ const x = await myFunction(someData);
 
 And x will be typed to be whatever `myFunction` returns!
 
-**Important:** Read the prerequisites and note that the declarations only include the function's _return value_. Not the data passed to it.
+**Important:** Read the prerequisites.
 
 ## Why?
 
